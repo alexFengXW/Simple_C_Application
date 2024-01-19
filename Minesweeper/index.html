@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Minesweeper Game</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div>
+        <!-- Dropdown for selecting board size -->
+        <label for="boardSizeSelect">Choose Board Size:</label>
+        <select id="boardSizeSelect">
+            <option value="8">8x8</option>
+            <option value="9">9x9</option>
+            <option value="10">10x10</option>
+        </select>
+    </div>
+    <div>
+        <!-- Display for the number of bombs left -->
+        <p id="bombsLeftDisplay"></p>
+    </div>
+    <div id="gameBoard"></div>
+    <button id="resetButton">Reset Game</button>
+    <button id="toggleFlagButton">Flag Mode: OFF</button>
+    <script src="script.js"></script>
+</body>
+</html>

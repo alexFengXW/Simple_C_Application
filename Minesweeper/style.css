@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+}
+
+#victoryContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none; 
+    z-index: 10; 
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+#victoryImage {
+    max-width: 80%;
+    max-height: 80%;
+    z-index: 11;
+}
+
+#gameBoard {
+    position: relative;
+    display: grid;
+    margin: 20px auto;
+    grid-row-gap: 1.5px;
+    grid-column-gap: 12px;
+    justify-content: center;
+}
+
+.cell {
+    width: 60px;
+    height: 60px;
+    border: 1px solid #bfbfbf;
+    cursor: pointer;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.bomb {
+    background-color: #ff6666;
+}
+
+#resetButton {
+    z-index: 12;
+    position: relative;
+    display: block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    margin: 20px auto;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#resetButton:hover {
+    background-color: #45a049;
+}
+
+label {
+    display: block;
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+#boardSizeSelect {
+    margin-bottom: 20px;
+    padding: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#bombsLeftDisplay {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .cell {
+        width: 50px;
+        height: 50px;
+    }
+
+    #gameBoard {
+        grid-gap: 0px;
+    }
+
+    #resetButton {
+        padding: 10.4px 19.5px;
+        font-size: 18.2px;
+    }
+
+    label, #bombsLeftDisplay {
+        font-size: 20.8px;
+    }
+
+    #boardSizeSelect {
+        padding: 5.2px;
+        font-size: 18.2px;
+    }
+}
