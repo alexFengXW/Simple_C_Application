@@ -1,1 +1,1 @@
-Some simple C applications from college assignments
+# Some simple C applications from college assignments
